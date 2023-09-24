@@ -4,9 +4,84 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Hello Coursera!</title>
+	<style type="text/css">
+		<!-- element selector -->
+		p {
+			width: 400px;
+		}
+		<!-- class selector -->
+		.blue {
+			color: blue;
+		}
+		<!-- id selector: most specific, least reusable -->
+		#name {
+			font-size: 100px;
+		}
+		<!-- direct child (remove sign between for 'descendent')-->
+
+		article > p {
+			color: red;
+		}
+
+		a:link, a:visited {
+			text-decoration: none;
+			display: block;
+			background-color: green;
+			color: black;
+			width: 200px;
+			margin-bottom: 1px;
+		}
+		a:hover  {
+			background-color: red;
+		}
+		a:active {
+			background-color: blue;
+		}
+
+		ul li:nth-child(2) {
+			font-size: 24px;
+		}
+		ul li:nth-child(odd) {
+			background-color: grey;
+		}
+	</style>
 </head>
 <body>
-<h1>Hello Coursera!</h1>
-<p>It's a great course.</p>
+	<header>
+		Stuff at the top.
+	</header>
+	<h1>Hello Coursera!</h1>
+	<p>Blah</p>
+	<div>
+		*** DIV 1
+		<span>SPan 1 inside Div 1</span>
+	</div>
+	<div>div2</div>
+	<section>
+		Section 1
+		<article>Article 1</article>
+	</section>
+	<aside>
+		Some asideful information
+	</aside>
+	<ul>
+		<li>&lt;
+			<ul>
+				<li>one thing&copy;</li>
+				<li>two thing</li>
+			</ul>
+		</li>
+		<li>&gt;</li>
+	</ul>
+
+	<section id="name">
+		<ul>
+			<li><a href="#section1">Section1</a></li>
+		</ul>
+	</section>
+	<p class="blue">BLahblahbalhbalh BLahblahbalhbalh BLahbl ahbalhbalh BLahblah balhbalh BLahblahba lhbalh BLahblahb alhbalh BLahblahbalhbalh BLahblahbalhbalh BLahblahbalhbalh BLahblahbalhbalh BLahblahbalhbalh BLahblahbalhbalh BLahblahbalhbalh BLahblahbalhbalh BLahblahbalhbalh BLahblahbalhbalh BLahblahbalhbalh BLahblahbalhbalh BLahblahbalhbalh BLahblahbalhbalh BLahblahbalhbalh BLahblahbalhbalh BLahblahbalhbalh </p>
+	<div>
+		<h2><a name="section1">Section 1</h2>
+	</div>
 </body>
 </html>
