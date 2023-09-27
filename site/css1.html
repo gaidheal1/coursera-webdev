@@ -9,15 +9,43 @@
 h2 {
   color: maroon;
 }
+.style {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0000ff;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 24px;
+  text-transform: capitalize;
+  text-align: right;
+}
+body {
+  font-size: 120%;
+
+}
 
 </style>
 </head>
 <body>
+  <header>
+    Stuff at the top.
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>Css1.html</li>
+      <li><a href="box-model.html">Box-model.html</a></li>
+    </ul>
+  </header>
 <h1>Style Placement</h1>
 <h2>Subheading 1</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex et similique cupiditate dignissimos delectus nulla dolore, eos dolorum quidem excepturi, facere non repellat accusamus, atque? Id voluptate eos et accusantium.</p>
 <h2>Subheading 2</h2>
-<p style="text-align: center;">I am centered!</p>
+<p class = "style" style="text-align: center;">I am centred!</p>
+
+<div>Regular text</div>
+<div style="font-size: 2em;">2em text
+  <div style="font-size: 2em">4em text
+    <div style="font-size: .5em">2em again!</div>
+  </div>
+</div>
 
 </body>
 </html>
